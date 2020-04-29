@@ -26,5 +26,5 @@
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :gruo@
+- belongs_to :gruop
 - belongs_to :user
