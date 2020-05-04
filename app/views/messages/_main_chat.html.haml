@@ -1,0 +1,40 @@
+.main_chat
+  .main_chat__header
+    .main_chat__header__leftbox
+      .main_chat__header__leftbox__current-group
+        test
+      .main_chat__header__leftbox__member-list
+        Member:
+        .main_chat__header__leftbox__member-list__member
+          yuhi
+    .main_chat__header__edit-btn
+      = link_to "#", class: "edit-btn" do
+        Edit
+  .main_chat__messages
+    .main_chat__messages__message
+      .main_chat__messages__message__info
+        .main_chat__messages__message__info__talker
+          yuhi
+        .main_chat__messages__message__info__date
+          2020/05/04(Mon) 12:13:40
+      .main_chat__messages__message__text
+        おはよう！
+    .main_chat__messages__message
+      .main_chat__messages__message__info
+        .main_chat__messages__message__info__talker
+          mai
+        .main_chat__messages__message__info__date
+          2020/05/04(Mon) 12:20:35
+      .main_chat__messages__message__text
+        こんにちは！
+  .main_chat__form
+    .main_chat__form__new-message
+      .main_chat__form__new-message__input-box
+        .main_chat__form__new-message__input-box__text
+          type a message
+        .main_chat__form__new-message__input-box__image
+          %label{class: "main_chat__form__new-message__input-box__image__post"}
+            = icon('fa fa-image', class: "icon-image")
+            %input{type: "file", class: "image-post"}
+      .main_chat__form__new-message__submit-btn
+        Send
