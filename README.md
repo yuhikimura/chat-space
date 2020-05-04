@@ -6,7 +6,7 @@
 |password|string|null: false|
 |nickname|string|null: false|
 ### Association
-- has_many :user_groups
+- has_many :users_groups
 - has_many :groups, through: users_groups
 - has_many :comments
 
