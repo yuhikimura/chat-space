@@ -5,14 +5,16 @@
         = current_user.name
       .side_bar__header__box__menu
         .side_bar__header__box__menu__new
-          = link_to "#", class: "btn-menu__new" do
+          = link_to new_group_path do
             = icon('far fa-edit',  class: "icon-menu__new")
         .side_bar__header__box__menu__edit
           = link_to edit_user_path(current_user) do
             = icon('fa fa-cog',  class: "icon-menu__edit")
   .side_bar__groups
-    .side_bar__groups__gruop
-      .side_bar__groups__gruop__name
-        tec-camp
-      .side_bar__groups__gruop__message
-        まだメッセージがありません。
+    - current_user.groups.each do |group|
+      .side_bar__groups__gruop
+        = link_to '#' do
+          .side_bar__groups__gruop__name
+            = group.name
+          .side_bar__groups__gruop__message
+            まだメッセージがありません。
