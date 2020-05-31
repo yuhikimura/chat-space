@@ -180,3 +180,8 @@
     }
   }
 }
+
+.messages {
+  overflow: scroll;
+  height: calc(100vh - 190px);
+}
